@@ -5,11 +5,9 @@ async function run() {
       // Load Model
       const ToDoItem = require('./models/item');
 
-      require('./service')
-
-      // // Do Things with Model
-      // var items = await ToDoItem.find();
-      // console.log(items);
+      // Do Things with Model
+      // Ausgabe mit: console.log(myVar);
+      
     } catch(err) {
       console.error(err);
     }
