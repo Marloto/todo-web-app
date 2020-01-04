@@ -1,14 +1,17 @@
+// Import ToDoItem Model
 const ToDoItem = require('../models/item');
+
+// What do we want to use as owner identifier?
+function getOwnerFromReq(req) {
+  return req.username;
+}
 
 // Create New Router for Request Handlings
 const router = require('express').Router();
 
+// Define current authorization method
 router.use(require('../utils/dummy.js'));
-//router.use(require('../utils/verifier.js'));
-
-function getOwnerFromReq(req) {
-  return req.username;
-}
+// router.use(require('../utils/verifier.js'));
 
 // Add Function to List ToDos in Service
 router.get('/', async (req, res) => {

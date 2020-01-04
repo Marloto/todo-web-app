@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
 
 const ToDo = mongoose.model('ToDo', {
-  text: String, 
-  done: Boolean, 
+  // Add your attributes here (add one comma at the end of each)
+  // myAttr: Type,
+
+  // We need at least this one
   owner: String
 });
 
