@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "cors": "^2.8.5",
+    "mongoose": "^5.8.3",
+    "express": "latest",
+    "body-parser": "latest"
+  }
+}
