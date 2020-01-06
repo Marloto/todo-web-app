@@ -15,7 +15,7 @@ async function run() {
 
 // Connect to Database
 mongoose.connect(
-  `mongodb://${process.env.MONGODB_HOST}:${process.env.MONGODB_PORT || 27017}/${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority`, 
+  `mongodb://${process.env.MONGODB_USER || "user"}:${process.env.MONGODB_PASS || "pass"}@${process.env.MONGODB_HOST}:${process.env.MONGODB_PORT || 27017}/${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority`, 
   {
     useNewUrlParser: true, 
     useUnifiedTopology: true, 
