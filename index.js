@@ -2,17 +2,17 @@ const mongoose = require('mongoose');
 console.log("Start ToDo-Web-App-Server");
 
 async function run() {
-    console.log("Connected to Database");
-    try {
-      // Load Model
-      const ToDoItem = require('./models/item');
+  console.log("Connected to Database");
+  try {
+    // Load Model
+    const ToDoItem = require('./models/item');
 
-      // Do Things with Model
-      // Ausgabe mit: console.log(myVar);
+    // Do Things with Model
+    // Ausgabe mit: console.log(myVar);
       
-    } catch(err) {
-      console.error(err);
-    }
+  } catch(err) {
+    console.error(err);
+  }
 }
 
 // Connect to Database
