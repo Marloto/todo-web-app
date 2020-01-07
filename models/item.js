@@ -5,6 +5,8 @@ const ToDo = mongoose.model('ToDo', {
   // myAttr: Type,
 
   // We need at least this one
+  text: String,
+  done: Boolean,
   owner: String
 });
 
