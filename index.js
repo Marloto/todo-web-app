@@ -21,7 +21,7 @@ console.log("Connect to: " + url);
 console.log("Connect with: " + (process.env.MONGODB_USER || "user"));
 mongoose.connect(url, 
   {
-    user: process.env.MONGODB_USER || "user",
+    user: process.env.MONGODB_USER || "example",
     pass: process.env.MONGODB_PASS || "pass",
     useNewUrlParser: true, 
     useUnifiedTopology: true, 
